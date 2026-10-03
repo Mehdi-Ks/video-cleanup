@@ -1,0 +1,14 @@
+{
+  "name": "video-cleanup",
+  "displayName": "Video Cleanup",
+  "version": "1.0.0",
+  "description": "Clean up speech audio (AI noise removal, loudness, stereo fixes) and picture quality in talking-head and demo videos, and add a logo watermark, name lower third and end card. Uses ffmpeg and DeepFilterNet; works on Windows, macOS and Linux.",
+  "author": {
+    "name": "Mehdi Ksibi",
+    "url": "https://github.com/Mehdi-Ks"
+  },
+  "homepage": "https://github.com/Mehdi-Ks/video-cleanup",
+  "repository": "https://github.com/Mehdi-Ks/video-cleanup",
+  "license": "MIT",
+  "keywords": ["video", "audio", "noise-reduction", "ffmpeg", "deepfilternet", "branding", "loudness"]
+}
