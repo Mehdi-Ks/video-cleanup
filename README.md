@@ -15,6 +15,25 @@ and add your branding, without touching your original file.
 
 Built from a real clean-up of outdoor interview footage and a LinkedIn product demo.
 
+## Will it work for me? Check these first
+
+This plugin runs real audio/video programs **on your own computer**, so it only works when all of
+these are true:
+
+| ✅ Condition | Why it matters |
+|---|---|
+| You use **Claude Code** (terminal or the desktop app's Code tab) | Claude needs to run local programs. Claude chat on web/mobile can't, so the plugin is listed for Claude Code only. |
+| Your computer is **Windows x64, macOS (Apple Silicon or Intel) or Linux x64/arm64** | The AI noise remover (DeepFilterNet) ships prebuilt only for these. |
+| **Python 3.9+** is installed | All the tools are Python scripts. |
+| **ffmpeg** is installed, or you let the setup step install it | ffmpeg does the actual audio/video processing. |
+| **Internet access once**, for setup | To download DeepFilterNet (~30 MB, from its official GitHub release, checksum-verified) and numpy/Pillow from PyPI. After that everything runs offline. |
+| The video is a **file on your computer** (mp4, mov, mkv…) | Nothing is uploaded anywhere; it's processed in place. A LinkedIn/YouTube link needs downloading first. |
+
+What to expect: noisy, quiet, one-sided or echoey **speech** gets clearly better, and low-quality or
+re-compressed **picture** looks noticeably cleaner. Not fixable: birdsong and other whistle-like
+sounds, a voice recorded very far from the mic (it stays somewhat roomy), burned-in captions, and
+detail already destroyed by heavy compression. Your original file is never changed.
+
 ## Install (Claude Code)
 
 ```bash
